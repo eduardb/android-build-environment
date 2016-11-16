@@ -17,13 +17,13 @@ Android Build on Docker Container
 
     $ eval "$(docker-machine env default)"
 
-    $ docker build -t uber/android-build-environment .
+    $ docker build -t eduardbolos/android-build-environment .
 
 ##### Android Build :
 
     $ cd /path/to/your/android/source/root
 
-    $ docker run -i -v $PWD:/project -t uber/android-build-environment /bin/bash /project/ci/build.sh
+    $ docker run -i -v $PWD:/project -t eduardbolos/android-build-environment /bin/bash /project/ci/build.sh
 
 #### FAQ
 
